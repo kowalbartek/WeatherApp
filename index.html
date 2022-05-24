@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+
+    <script
+    defer
+    src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+    ></script>
+    <!-- Reference to JS -->
+    <script src="./app.js" defer></script>
+    <!-- Reference to CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Website favicon using the icons from API -->
+    <link href="https://openweathermap.org/img/wn/04n.png" rel="icon" type="image/png">
+
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <label>
+          <!-- Input box -->
+          <input class="search-bar"/>
+          <!-- Selection button -->
+          <button>
+            <svg
+              class="fa fa-search"
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 1024 1024"
+              height="1.5em"
+              width="1.5em"
+              xmlns="http://www.w3.org/2000/svg"/>
+          </button>
+        </label>
+      </div>
+      <!-- Weather loading -->
+      <div class="weather loading">
+        <div class="location">
+          <h1 class="location-city">Weather in ...</h1>
+          <!-- Icon -->
+          <img
+            src="https://openweathermap.org/img/wn/04n.png"
+            alt=""
+            class="icon"
+          />
+        </div>
+        <!-- Temperature, humidity and wind -->
+        <div class="temperature">
+          <div class="degree-section">
+            <h2 class="temperature-degree">29<span>°C</span></h2>
+          </div>
+          <div class="temperature-des">Cloudy</div>
+          <div class="humidity">Humidity: </div>
+          <div class="wind">Wind: </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
