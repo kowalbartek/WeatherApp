@@ -30,8 +30,18 @@ let weather = {
     document.querySelector(".wind").innerHTML = "Wind: " + speed + "Km/hr";
     // Remove "loading"
     document.querySelector(".weather ").classList.remove("loading");
+
+    // Find size of screen to get accurate sized background
+    const win = window,
+        doc = document,
+        docElem = doc.documentElement,
+        body = doc.getElementsByTagName('body')[0],
+        x = win.innerWidth || docElem.clientWidth || body.clientWidth,
+        y = win.innerHeight || docElem.clientHeight || body.clientHeight;
+    //alert(x + ' × ' + y);
+
     // Set the background to image of the city entered
-    document.body.style.backgroundImage = `url('https://source.unsplash.com/1920x1080/?${description}')`;
+    document.body.style.backgroundImage = `url('https://source.unsplash.com/${x}x${y}/?${description}')`;
     // Reset search bar value to empty
     document.querySelector(".search-bar").value = "";
   },
