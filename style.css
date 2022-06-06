@@ -87,6 +87,7 @@ input.search-bar {
   color: white;
   font-family: inherit;
   font-size: 105%;
+  
   width: calc(100% - 100px);
 }
 
