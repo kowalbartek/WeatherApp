@@ -1,3 +1,5 @@
+// Javascript behind the application
+
 let weather = {
   apikey: "c7dd1f48d200b1c6bc7c0594a4501c5e",
   fetchWeather: function (city) {
